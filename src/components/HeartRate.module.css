@@ -1,0 +1,56 @@
+.heartRate {
+    width: 150px;
+    height: 73px;
+    position: absolute;
+    margin-top:25px ;
+    margin-left: -29px;
+  }
+  
+  .fadeIn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #E37070;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 5s linear infinite;
+  }
+  
+  .fadeOut {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 5s linear infinite;
+    background: #000000;
+    background: -moz-linear-gradient(left, #E37070 0%, #E37070 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, #E37070 0%, #E37070 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, #E37070 0%, #E37070 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left,#E37070 0%, #E37070 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #E37070 0%, #E37070 80%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
